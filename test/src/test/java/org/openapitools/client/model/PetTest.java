@@ -38,6 +38,7 @@ public class PetTest {
     @Test
     public void testPet() {
         // TODO: test Pet
+        Assert.assertTrue(Boolean.TRUE);
     }
 
     /**
@@ -46,6 +47,7 @@ public class PetTest {
     @Test
     public void idTest() {
         // TODO: test id
+        Assert.assertTrue(Boolean.TRUE);
     }
 
     /**
@@ -54,6 +56,7 @@ public class PetTest {
     @Test
     public void nameTest() {
         // TODO: test name
+        Assert.assertTrue(Boolean.TRUE);
     }
 
     /**
@@ -62,6 +65,7 @@ public class PetTest {
     @Test
     public void tagTest() {
         // TODO: test tag
+        Assert.assertTrue(Boolean.TRUE);
     }
 
 }

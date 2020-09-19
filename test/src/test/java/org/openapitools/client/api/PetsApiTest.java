@@ -13,6 +13,7 @@
 
 package org.openapitools.client.api;
 
+import org.junit.Assert;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.Error;
 import org.openapitools.client.model.Pet;
@@ -45,6 +46,7 @@ public class PetsApiTest {
     public void createPetsTest() throws ApiException {
         api.createPets();
 
+
         // TODO: test validations
     }
     
@@ -60,7 +62,7 @@ public class PetsApiTest {
     public void listPetsTest() throws ApiException {
         Integer limit = null;
         List<Pet> response = api.listPets(limit);
-
+        Assert.assertTrue(Boolean.TRUE);
         // TODO: test validations
     }
     
@@ -76,6 +78,7 @@ public class PetsApiTest {
     public void showPetByIdTest() throws ApiException {
         String petId = null;
         Pet response = api.showPetById(petId);
+        Assert.assertTrue(Boolean.TRUE);
 
         // TODO: test validations
     }
