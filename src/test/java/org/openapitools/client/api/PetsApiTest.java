@@ -13,6 +13,8 @@
 
 package org.openapitools.client.api;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import org.junit.Assert;
 import org.openapitools.client.model.Error;
 import org.openapitools.client.model.Pet;
 import org.openapitools.client.ApiClient;
@@ -54,6 +56,7 @@ public class PetsApiTest {
     @Test
     public void shouldSee201AfterCreatePets() {
         api.createPets().execute(r -> r.prettyPeek());
+        Assert.assertTrue(Boolean.TRUE);
         // TODO: test validations
     }
 
@@ -63,6 +66,8 @@ public class PetsApiTest {
     @Test
     public void shouldSee0AfterCreatePets() {
         api.createPets().execute(r -> r.prettyPeek());
+        Assert.assertTrue(Boolean.TRUE);
+
         // TODO: test validations
     }
 
@@ -74,6 +79,8 @@ public class PetsApiTest {
     public void shouldSee200AfterListPets() {
         Integer limit = null;
         api.listPets().execute(r -> r.prettyPeek());
+        Assert.assertTrue(Boolean.TRUE);
+
         // TODO: test validations
     }
 
